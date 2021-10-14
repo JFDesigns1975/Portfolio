@@ -245,7 +245,7 @@ h3 {
 
 footer > div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 70%;
     min-height: 10vh;
     align-items: center;
