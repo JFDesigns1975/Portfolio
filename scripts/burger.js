@@ -1,20 +1,17 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
 
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
 
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s';
-            }
-    });
-        burger.classList.toggle('toggle');
-    });
+
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
-
-navSlide();
+function close(){
+    mainMenu.style.top = '-100%';
+}

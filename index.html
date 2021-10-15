@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/6cfe640a08.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/woo3zse.css">
     <link rel="stylesheet" href="./css/master.css" />
@@ -13,19 +14,23 @@
 <body>
 <div class="cursor"></div>
 <nav>
-    <ul class="nav-links">
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
+    <ul class="mainMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Skills</a></li>
         <li><a href="website-design.html">Web Design</a></li>
         <li><a href="graphic-design.html">Graphic Design</a></li>
-        <li><a href="game-design.html">Game Design</a></li>
+
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
     </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
 </nav>
+
 
 <section>
     <div class="front-cover">
