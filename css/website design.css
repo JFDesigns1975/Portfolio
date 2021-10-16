@@ -23,17 +23,6 @@ div.desc {
     text-align: center;
 }
 
-div.gallery2 {
-    margin: 40px;
-    float: left;
-    height: 259px;
-}
-
-div.gallery2 img {
-    height: 100%;
-    width: auto;
-}
-
 .image-container {
     display: flex;
     margin: 40px;
