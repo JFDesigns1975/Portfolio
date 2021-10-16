@@ -42,12 +42,12 @@ nav .mainMenu .closeMenu , .icons i {
     display: none;
     cursor: pointer;
 }
-.fa-facebook:hover {color: #0563f3}
-.fa-twitter:hover {color: #05f3da}
-.fa-instagram:hover {color: #f305c0}
-.fa-github:hover {color: #05f310}
-.fa-pinterest:hover {color: #f30513}
-.fa-linkedin:hover {color: #ba76fa}
+.fa-facebook:hover {color: #85c1e9}
+.fa-twitter:hover {color: #85c1e9}
+.fa-instagram:hover {color: #85c1e9}
+.fa-github:hover {color: #85c1e9}
+.fa-pinterest:hover {color: #85c1e9}
+.fa-linkedin:hover {color: #85c1e9}
 @media(max-width: 800px){
     nav .mainMenu {
         height: 100vh;
