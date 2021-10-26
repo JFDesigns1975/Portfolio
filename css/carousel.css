@@ -7,6 +7,7 @@
 }
 
 .carousel-container {
+    display: flex;
     width: 350px;
     margin: auto;
     overflow: hidden;
