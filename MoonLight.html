@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/MoonLight.css">
+    <title>Moon Light</title>
+</head>
+<body>
+<header>
+    <a href="#" class="logo"><img src="images/MoonLogo.png"></a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+<section>
+    <img src="images/stars.png" id="stars">
+    <img src="images/moon.png" id="moon">
+    <img src="images/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Moon Light</h2>
+    <a href="#" id="btn">Explore</a>
+    <img src="images/mountains_front.png" id="mountains_front">
+</section>
+<div class="sec" id="sec">
+    <h2>Moon Light Madness</h2>
+    <p>The lunar phase or Moon phase is the shape of the Moon's directly sunlit portion as viewed from Earth.
+        The lunar phases gradually change over a synodic month (about 29.53 days) as the Moon's orbital positions
+        around Earth and Earth around the Sun shift. The visible side of the moon is variously sunlit, depending on
+        the position of the Moon in its orbit. Thus, this face's sunlit portion can vary from 0% (at new moon) to 100%
+        (at full moon). Each of the four "intermediate" lunar phases (see below) is approximately 7.4 days, with slight
+        variation due to the Moon's orbit's elliptical shape.<br><br>There are four principal lunar phases: the new moon,
+        first quarter, full moon, and last quarter (also known as third or final quarter), when the Moon's ecliptic
+        longitude is at an angle to the Sun (as viewed from the centre of the Earth) of 0°, 90°, 180°, and 270°, respectively
+        [1][a] Each of these phases appears at slightly different times at different locations on Earth. During the intervals
+        between principal phases are intermediate phases, during which the Moon's apparent shape is either crescent or gibbous.
+        On average, the intermediate phases last one-quarter of a synodic month, or 7.38 days.[b] The descriptor waxing is used
+        for an intermediate phase when the Moon's apparent shape is thickening, from new to a full moon, and waning when the
+        shape is thinning. The longest duration between full moon to new moon (or new moon to full moon) lasts about 15 days
+        and 14+1⁄2 hours, while the shortest duration between full moon to new moon (or new moon to full moon) lasts only about
+        13 days and 22+1⁄2 hours.<br><br>When the Moon as seen from Earth is a thin crescent, Earth as viewed from the Moon is
+        almost fully lit by the Sun. Often, the dark side of the Moon is dimly illuminated by indirect sunlight reflected from
+        Earth, but is bright enough to be easily visible from Earth. This phenomenon is called earthshine and sometimes
+        picturesquely described as "the old moon in the new moon's arms" or "the new moon in the old moon's arms".</p>
+</div>
+<script>
+    let stars = document.getElementById('stars');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.25 + 'px';
+        mountains_front.style.top = 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * .65 + 'px';
+        btn.style.marginTop = value * 1.75 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+</body>
+</html>

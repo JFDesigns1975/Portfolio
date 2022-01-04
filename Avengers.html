@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Avengers.css">
+    <title>Avengers Assemble</title>
+</head>
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">Avengers Assemble</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#" style="--i:1;">Home</a></li>
+            <li><a href="#" style="--i:2;">Characters</a></li>
+            <li><a href="#" style="--i:3;">Movies</a></li>
+            <li><a href="#" style="--i:4;">Games</a></li>
+            <li><a href="#" style="--i:5;">More</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="box" style="--i:3;">
+            <div class="imgBox">
+                <img src="images/captainamerica4.jpg">
+            </div>
+        </div>
+        <div class="box" style="--i:4;">
+            <div class="imgBox">
+                <img src="images/hulk.jpg">
+            </div>
+        </div>
+        <div class="box" style="--i:5;">
+            <div class="imgBox">
+                <img src="images/blackwidow5.jpg">
+            </div>
+        </div>
+        <div class="box" style="--i:6;">
+            <div class="imgBox">
+                <img src="images/thor5.jpg">
+            </div>
+        </div>
+        <div class="box" style="--i:7;">
+            <div class="imgBox">
+                <img src="images/ironman4.jpg">
+            </div>
+        </div>
+        <div class="box" style="--i:8;">
+            <div class="imgBox">
+                <img src="images/hawkeye2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="sci">
+            <li><a href="#" style="--i:9;">Facebook</a></li>
+            <li><a href="#" style="--i:8;">Twitter</a></li>
+            <li><a href="#" style="--i:7;">Instagram</a></li>
+        </ul>
+        <p class="copyrightText">Marvel Studios 2021</p>
+    </div>
+</section>
+
+<script>
+
+    let imgBox = document.querySelectorAll('.imgBox');
+    imgBox.forEach(popup => popup.addEventListener('click', () =>{
+        popup.classList.toggle('active');
+    }))
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

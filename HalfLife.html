@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300; 700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/HalfLife.css"/>
+    <title>Half Life 2</title>
+</head>
+<body>
+<div class="screen">
+    <i class="fas fa-volume-mute fa-2x" id="sound"></i>
+
+    <video autoplay loop muted id="videoBackground">
+        <source src="images/video/background.mp4" type="video/mp4"/>
+    </video>
+    <audio id="audioClick">
+        <source src="images/sounds/buttonclick.wav" type="audio/wav"/>
+    </audio>
+    <audio id="audioHover">
+        <source src="images/sounds/buttonrollover.wav" type="audio/wav"/>
+    </audio>
+    <div class="menu">
+        <h1>Half Life<sup>2</sup></h1>
+        <h3>Episode Two</h3>
+        <ul>
+            <li><a href="#">New Game</a></li>
+            <li><a href="#">Load Game</a></li>
+            <li><a href="#">Developer</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Options</a></li>
+            <li><a href="#">Quit</a></li>
+        </ul>
+    </div>
+</div>
+<script src="scripts/HalfLife.js"></script>
+</body>
+</html>
