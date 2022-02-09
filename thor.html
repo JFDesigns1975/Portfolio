@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Character.css">
+    <title>Thor</title>
+</head>
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">THOR</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a target="_self" href="images/WebPageLinks/AvengersAssemble.html" style="--i:1;">Home</a></li>
+            <li><a target="_self" href="Characters.html" style="--i:2;">Characters</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/movies" style="--i:3;">Movies</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/games" style="--i:4;">Games</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/culture-lifestyle" style="--i:5;">More</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="textBox">
+            <p>
+                Thor, the God of Thunder, the son of Odin, the Asgardian prince, wields the mystical
+                mallet Mjolnir as he protects innocents across the realms on his own and as a member
+                of the Avengers. He takes his name from the inscription on his famous weapon.
+            </p>
+            <a href="#">READ BIO</a>
+        </div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="images/thor6.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="sci">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p class="copyrightText">Marvel Studios 2021</p>
+    </div>
+</section>
+<script>
+    let imgBox = document.querySelectorAll('.imgBox');
+    imgBox.forEach(popup => popup.addEventListener('click', () =>{
+        popup.classList.toggle('active');
+    }))
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
