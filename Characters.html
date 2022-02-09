@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/Avengers.css">
-    <title>Avengers Assemble</title>
+    <title>Characters</title>
 </head>
 <body>
 <section>
@@ -12,42 +12,54 @@
         <a href="#" class="logo">Avengers Assemble</a>
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#" style="--i:1;">Home</a></li>
-            <li><a href="#" style="--i:2;">Characters</a></li>
-            <li><a href="#" style="--i:3;">Movies</a></li>
-            <li><a href="#" style="--i:4;">Games</a></li>
-            <li><a href="#" style="--i:5;">More</a></li>
+            <li><a target="_self" href="images/WebPageLinks/AvengersAssemble.html" style="--i:1;">Home</a></li>
+            <li><a target="_self" href="Characters.html" style="--i:2;">Characters</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/movies" style="--i:3;">Movies</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/games" style="--i:4;">Games</a></li>
+            <li><a target="_blank" href="https://www.marvel.com/culture-lifestyle" style="--i:5;">More</a></li>
         </ul>
     </header>
     <div class="container">
         <div class="box" style="--i:3;">
             <div class="imgBox">
-                <img src="images/captainamerica4.jpg">
+                <a target="_self" href="captainamerica.html">
+                    <img src="images/captainamerica4.jpg">
+                </a>
             </div>
         </div>
         <div class="box" style="--i:4;">
             <div class="imgBox">
-                <img src="images/hulk.jpg">
+                <a target="_self" href="hulk.html">
+                    <img src="images/hulk.jpg">
+                </a>
             </div>
         </div>
         <div class="box" style="--i:5;">
             <div class="imgBox">
-                <img src="images/blackwidow5.jpg">
+                <a target="_self" href="blackwidow.html">
+                    <img src="images/blackwidow4.jpg">
+                </a>
             </div>
         </div>
         <div class="box" style="--i:6;">
             <div class="imgBox">
-                <img src="images/thor5.jpg">
+                <a target="_self" href="thor.html">
+                    <img src="images/thor5.jpg">
+                </a>
             </div>
         </div>
         <div class="box" style="--i:7;">
             <div class="imgBox">
-                <img src="images/ironman4.jpg">
+                <a target="_self" href="ironman.html">
+                    <img src="images/ironman4.jpg">
+                </a>
             </div>
         </div>
-        <div class="box" style="--i:8;">
+        <div class="box">
             <div class="imgBox">
-                <img src="images/hawkeye2.jpg">
+                <a target="_self" href="hawkeye.html">
+                    <img src="images/hawkeye2.jpg">
+                </a>
             </div>
         </div>
     </div>
@@ -61,14 +73,7 @@
         <p class="copyrightText">Marvel Studios 2021</p>
     </div>
 </section>
-
 <script>
-
-    let imgBox = document.querySelectorAll('.imgBox');
-    imgBox.forEach(popup => popup.addEventListener('click', () =>{
-        popup.classList.toggle('active');
-    }))
-
     function toggleMenu(){
         const menuToggle = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
