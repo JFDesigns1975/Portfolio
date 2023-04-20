@@ -59,7 +59,7 @@ p {
 
 .front-cover img {
     display: flex;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     margin: auto;
     position: relative;
