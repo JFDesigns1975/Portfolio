@@ -7,14 +7,12 @@
 }
 
 .image-container {
+    display: flex;
     margin: 60px;
     height: 720px;
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-}
+    width: auto;
+    float: left;
+    position: relative;
 }
 .image-container img {
     height: 100%;
