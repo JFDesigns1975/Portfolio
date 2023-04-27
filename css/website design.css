@@ -24,10 +24,6 @@ div.gallery img {
 }
 
 .image-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    float: left;
     padding: 30px;
     width: auto;
 }
