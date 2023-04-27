@@ -24,12 +24,16 @@ div.gallery img {
 }
 
 .image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
     padding: 30px;
     width: auto;
 }
 .image-container img {
     height: auto;
-    width: 360px;
+    width: 100%;
 }
 
 .transition-image {
