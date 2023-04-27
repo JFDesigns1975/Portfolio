@@ -10,7 +10,7 @@
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    -webkit-justify-content: center;
 }
 
 div.gallery {
