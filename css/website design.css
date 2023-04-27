@@ -7,7 +7,6 @@
 }
 
 .container {
-    width: 100%;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,8 +14,9 @@
 }
 
 div.gallery {
+    display: flex;
     padding: 10px;
-    width: 360px;
+    
 }
 
 div.gallery img {
