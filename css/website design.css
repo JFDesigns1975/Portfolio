@@ -25,7 +25,7 @@ div.gallery img {
 }
 
 div.gallery1 img {
-    max-width: 420px;
+    min-width: 1000px;
     height: auto;
 }
 
