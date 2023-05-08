@@ -29,6 +29,11 @@ div.gallery1 img {
     height: auto;
 }
 
+div.gallery2 img {
+    max-width: 675px;
+    height: auto;
+}
+
 .image-container {
     padding: 30px;
     width: auto;
