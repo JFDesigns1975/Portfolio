@@ -29,7 +29,7 @@ nav .mainMenu li a {
     font-size: 18px;
 }
 nav .mainMenu li a:hover {
-    background: #FF3300;
+    background: #268ff6;
 }
 nav .openMenu {
     font-size: 18px;
@@ -75,7 +75,7 @@ nav .mainMenu .closeMenu , .icons i {
     }
     nav .mainMenu li a:hover {
         background: none;
-        color: #FF3300;
+        color: #268ff6;
         font-size: 1.6rem;
     }
     .icons i {
