@@ -83,7 +83,7 @@ h3 {
     top: 1375px;
     left: 100px;
     padding-bottom: 50px;
-    max-width: 400px;;
+    max-width: 400px;
     z-index: -3;
     backdrop-filter: grayscale(50%);
 }
